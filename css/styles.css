@@ -1,0 +1,14 @@
+body{
+    background-color: aqua;
+}
+h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-display: inherit;
+    color: rgb(230, 10, 211);
+    text-align: center;
+}
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(233, 161, 7);
+    text-align: center;
+}
