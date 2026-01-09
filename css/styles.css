@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: rgb(155, 187, 104);
 }
 h1{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -13,16 +13,19 @@ p{
     text-align: center;
 }
 #Encabezado {
-    background-color: rgb(7, 233, 161);
-    min-height: 50px;
-    height: auto; 
-    width: 500px;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: rgb(202, 153, 241);
+   
+    height: 60px; 
+    width: 95%;
+    padding: 0 auto;
+    padding: 10px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     gap: 20px;
 }
 
 .encabezado1 {
@@ -37,6 +40,61 @@ p{
 }
 .encabezado3 {
     font-size: 16px;
-    color: rgb(0, 128, 0);
+    color: rgb(174, 235, 139);
     margin: 0;
+}
+.logo {
+    flex: 1;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    flex: 2; 
+    justify-content: center;
+    text-align: center;
+}
+.redes {
+    flex: 1;
+    justify-items: center;
+    text-align: right;
+    
+}
+.logo img {
+    height: 75px; 
+    width: 200px;
+    justify-content: center;
+    padding-top: 5px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(235, 158, 203);
+}
+.menu ul li {
+    margin: 0 15px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(132, 0, 255);
+    font-weight: bold;
+    font-size: 18px;
+    padding:10px 10px;
+}
+.menu ul li a:hover {
+    background-color: #080cfa;
+    color: rgb(247, 241, 241);
+    border-radius: 4px;
+}
+.redes img {
+    height: 40px; 
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    
 }
