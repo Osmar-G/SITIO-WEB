@@ -1,100 +1,177 @@
-body{
-    background-color: rgb(155, 187, 104);
+
+body {
+    background-color: #f0f4f8; 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-h1{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-display: inherit;
-    color: rgb(230, 10, 211);
+
+
+h2 {
+   font-family: 'Arial Black', Gadget, sans-serif;
+    color: #9b08fd; 
     text-align: center;
 }
-p{
+h3{
+    font-family: 'Arial Black', Gadget, sans-serif;
+    color: #9b08fd; 
+    text-align: center;
+}
+p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: rgb(233, 161, 7);
+    color: #ff6f00; 
     text-align: center;
 }
+
+
 #Encabezado {
-    background-color: rgb(202, 153, 241);
-   
-    height: 60px; 
+    background-color: #ede7f6; 
+    height: 70px; 
     width: 95%;
-    padding: 0 auto;
-    padding: 10px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 20px auto;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
-     gap: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .encabezado1 {
-    font-size: 24px;
-    color: rgb(255, 0, 0);
+    font-size: 26px;
+    color: #d32f2f; 
     margin: 0;
 }
 .encabezado2 {
     font-size: 20px;
-    color: rgb(0, 0, 255);
-    margin: 0;
+    color: #303f9f; 
 }
 .encabezado3 {
     font-size: 16px;
-    color: rgb(174, 235, 139);
+    color: #388e3c; 
     margin: 0;
 }
+
+
 .logo {
     flex: 1;
     text-align: left;
-    align-items: center;
-    justify-content: center;
 }
 .menu {
-    flex: 2; 
+    flex: 2;
     justify-content: center;
     text-align: center;
 }
 .redes {
     flex: 1;
-    justify-items: center;
     text-align: right;
-    
 }
+
 .logo img {
     height: 75px; 
-    width: 200px;
-    justify-content: center;
-    padding-top: 5px;
+    width: auto;
 }
+
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    height: 50px;
     display: flex;
     align-items: center;
-    background-color: rgb(235, 158, 203);
+    background-color: #d1c4e9; 
+    border-radius: 8px;
 }
 .menu ul li {
     margin: 0 15px;
 }
 .menu ul li a {
     text-decoration: none;
-    color: rgb(132, 0, 255);
+    color: #4a148c; 
     font-weight: bold;
     font-size: 18px;
-    padding:10px 10px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
 }
 .menu ul li a:hover {
-    background-color: #080cfa;
-    color: rgb(247, 241, 241);
-    border-radius: 4px;
+    background-color: #7b1fa2; 
+    color: #fff;
+    border-radius: 6px;
 }
+
 .redes img {
     height: 40px; 
     width: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 10px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+.redes img:hover {
+    transform: scale(1.1);
+}
+
+
+#Contenido {
+    margin: 0 auto;
+    width: 95%;
+    min-height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url('/images/images3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative; 
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+#Contenido ul {
+    list-style-type: none;
+    padding-left: 20px;
+    text-align: center;
+    color: #e91111; 
+    font-size: 18px;
+}
+#Contenido::before {
+    content: "";
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
     
+    border-radius: 12px;
+}
+
+
+#Tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: #e1bee7; 
+    border: 2px solid #7b1fa2; 
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 20px rgba(0,0,0,0.3);
+}
+footer {
+    background-color: #ede7f6; 
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
 }
